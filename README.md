@@ -80,7 +80,7 @@ VR_Assignment1_SiddeshwarKagatikar_IMT2022026/
 - **Segmentation**: Crops and saves detected coins as separate images.  
 
 ### **🔵 Task 2: Image Stitching (Panorama Creation)**  
-- **Feature Extraction**: Use **SIFT** to extract key points.  
+- **Feature Extraction**: Use **ORB** to extract key points.  
 - **Homography Estimation**: RANSAC algorithm to align overlapping images.  
 - **Blending & Stitching**: Merges images into a seamless panorama.  
 
@@ -125,7 +125,7 @@ VR_Assignment1_SiddeshwarKagatikar_IMT2022026/
 
 #### **1. Keypoint Detection & Matching Outputs**
 - **Pairwise Keypoint Matching Images (`keypoints_1_2.jpg`, `keypoints_2_3.jpg`, … )**
-  - The algorithm extracts **SIFT key points** from each pair of consecutive images.
+  - The algorithm extracts **ORB key points** from each pair of consecutive images.
   - Then to **matches key points**, RANSAC algorithm to align overlapping images.  .
   - The **good matches** are visualized with colored lines connecting similar features between two images.
   - This step helps validate whether the images have **sufficient feature overlap** for stitching.
